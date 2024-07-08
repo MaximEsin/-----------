@@ -19,7 +19,7 @@ export interface Event {
 }
 
 export interface Step {
-  id?: number;
+  id: number;
   cost: number;
   payload: {
     beforeSymbols: Symbol[];
