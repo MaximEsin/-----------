@@ -1,0 +1,23 @@
+.container {
+  width: 45%;
+  padding: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.playgroundContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 90%;
+  background-color: chocolate;
+  padding: 5px;
+}

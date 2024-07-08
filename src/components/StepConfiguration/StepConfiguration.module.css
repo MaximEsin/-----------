@@ -1,0 +1,41 @@
+.container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.settingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 90%;
+  background-color: chocolate;
+  padding: 5px;
+}
+
+.overflowContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+}
+
+.symbolsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+}
