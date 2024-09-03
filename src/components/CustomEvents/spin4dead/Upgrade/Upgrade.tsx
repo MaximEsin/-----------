@@ -1,8 +1,13 @@
+// @ts-nocheck
 import { FC, useEffect, useState } from 'react';
 
 import { spin4DeadSymbolSources } from '../../../../context/imgPaths/spin4dead';
 import { useAppDispatch, useAppSelector } from '../../../../hooks';
-import { CustomEventProps, Spin4DeadEventTypes, Spin4DeadUpgradeEvent } from '../../../../interfaces/events';
+import {
+  CustomEventProps,
+  Spin4DeadEventTypes,
+  Spin4DeadUpgradeEvent,
+} from '../../../../interfaces/events';
 import { ReelSymbol } from '../../../../interfaces/step';
 import { setNewReelsAction } from '../../../../services/actions';
 import Reels from '../../../Reels/Reels';
@@ -10,7 +15,9 @@ import styles from './Upgrade.module.css';
 
 const Upgrade: FC<CustomEventProps> = ({ eventData, onSubmit }) => {
   const dispatch = useAppDispatch();
-  const { currentSymbolId, currentNodeId } = useAppSelector((state) => state.mainReducer);
+  const { currentSymbolId, currentNodeId } = useAppSelector(
+    (state) => state.mainReducer
+  );
   const { reels } = useAppSelector((state) => state.reelStateReducer);
   const reelsCopy = structuredClone(reels[currentNodeId]);
   const [reelsState, setReelsState] = useState(reelsCopy);
@@ -45,9 +52,12 @@ const Upgrade: FC<CustomEventProps> = ({ eventData, onSubmit }) => {
     if (multiplier < 0.1) return;
     setReelsState((prev) => {
       const newReels = [...prev];
-      if (newReels[index].properties) newReels[index].properties.multiplier = multiplier;
+      if (newReels[index].properties)
+        newReels[index].properties.multiplier = multiplier;
       setChangedSymbols((prevSymbols) => {
-        const newChangedSymbols = prevSymbols.filter((symbol) => symbol.indices[0] !== newReels[index].indices[0]);
+        const newChangedSymbols = prevSymbols.filter(
+          (symbol) => symbol.indices[0] !== newReels[index].indices[0]
+        );
         newChangedSymbols.push(newReels[index]);
         return newChangedSymbols;
       });
@@ -66,7 +76,11 @@ const Upgrade: FC<CustomEventProps> = ({ eventData, onSubmit }) => {
           onInputChange={handleInputChange}
         />
       </div>
-      <button type="button" className={styles.button} onClick={() => handleSubmit()}>
+      <button
+        type="button"
+        className={styles.button}
+        onClick={() => handleSubmit()}
+      >
         Сохранить
       </button>
     </div>

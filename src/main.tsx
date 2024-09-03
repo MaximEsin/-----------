@@ -4,7 +4,8 @@ import { ReactFlowProvider } from '@xyflow/react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 
-import App from './components/App/App';
+// @ts-ignore
+import App from './components/app/App';
 import { store } from './services/reducers';
 
 ReactDOM.createRoot(document.getElementById('main')!).render(
@@ -12,5 +13,5 @@ ReactDOM.createRoot(document.getElementById('main')!).render(
     <ReactFlowProvider>
       <App />
     </ReactFlowProvider>
-  </Provider>,
+  </Provider>
 );

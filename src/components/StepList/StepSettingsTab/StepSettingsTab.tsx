@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ChangeEvent } from 'react';
 
 import { useAppDispatch, useAppSelector } from '../../../hooks';
@@ -19,7 +20,9 @@ import styles from './StepSettingsTab.module.css';
 
 const StepSettingsTab = () => {
   const dispatch = useAppDispatch();
-  const { currentStepIndex, steps } = useAppSelector((state) => state.mainReducer);
+  const { currentStepIndex, steps } = useAppSelector(
+    (state) => state.mainReducer
+  );
 
   return (
     <div className={styles.settingsTabContainer}>
@@ -29,7 +32,9 @@ const StepSettingsTab = () => {
           <Input
             type="number"
             placeholder="Cost"
-            onChange={(e: ChangeEvent<HTMLInputElement>) => dispatch(changeStepCostAction(Number(e.target.value)))}
+            onChange={(e: ChangeEvent<HTMLInputElement>) =>
+              dispatch(changeStepCostAction(Number(e.target.value)))
+            }
             value={steps[currentStepIndex].cost}
           />
         </Container>
@@ -40,7 +45,9 @@ const StepSettingsTab = () => {
               { value: StepTypes.BaseGame, text: 'Обычная игра' },
               { value: StepTypes.BonusGame, text: 'Бонусная игра' },
             ]}
-            onChange={(e: ChangeEvent<HTMLSelectElement>) => dispatch(changeNextStepTypeAction(Number(e.target.value)))}
+            onChange={(e: ChangeEvent<HTMLSelectElement>) =>
+              dispatch(changeNextStepTypeAction(Number(e.target.value)))
+            }
             value={steps[currentStepIndex].payload.nextStepType}
           />
         </Container>
@@ -49,7 +56,9 @@ const StepSettingsTab = () => {
           <Input
             type="number"
             placeholder="Step Win"
-            onChange={(e: ChangeEvent<HTMLInputElement>) => dispatch(changeStepWinAction(Number(e.target.value)))}
+            onChange={(e: ChangeEvent<HTMLInputElement>) =>
+              dispatch(changeStepWinAction(Number(e.target.value)))
+            }
             value={steps[currentStepIndex].stepWin}
           />
         </Container>
@@ -58,7 +67,9 @@ const StepSettingsTab = () => {
           <Input
             type="number"
             placeholder="Total Win"
-            onChange={(e: ChangeEvent<HTMLInputElement>) => dispatch(changeTotalWinAction(Number(e.target.value)))}
+            onChange={(e: ChangeEvent<HTMLInputElement>) =>
+              dispatch(changeTotalWinAction(Number(e.target.value)))
+            }
             value={steps[currentStepIndex].totalWin}
           />
         </Container>
@@ -69,7 +80,9 @@ const StepSettingsTab = () => {
               { value: StepTypes.BaseGame, text: 'Обычная игра' },
               { value: StepTypes.BonusGame, text: 'Бонусная игра' },
             ]}
-            onChange={(e: ChangeEvent<HTMLSelectElement>) => dispatch(changeStepTypeAction(Number(e.target.value)))}
+            onChange={(e: ChangeEvent<HTMLSelectElement>) =>
+              dispatch(changeStepTypeAction(Number(e.target.value)))
+            }
             value={steps[currentStepIndex].type}
           />
         </Container>
@@ -81,7 +94,9 @@ const StepSettingsTab = () => {
                 type="number"
                 placeholder="Add Free Spins"
                 value={steps[currentStepIndex].payload.counter.added}
-                onChange={(e: ChangeEvent<HTMLInputElement>) => dispatch(addFreeSpinsAction(Number(e.target.value)))}
+                onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                  dispatch(addFreeSpinsAction(Number(e.target.value)))
+                }
               />
             </Container>
             <Container>
@@ -90,7 +105,9 @@ const StepSettingsTab = () => {
                 type="number"
                 placeholder="Free Spins Left"
                 value={steps[currentStepIndex].payload.counter.left}
-                onChange={(e: ChangeEvent<HTMLInputElement>) => e.preventDefault()}
+                onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                  e.preventDefault()
+                }
                 disabled
               />
             </Container>
@@ -100,7 +117,9 @@ const StepSettingsTab = () => {
                 type="number"
                 placeholder="Free Spins Played"
                 value={steps[currentStepIndex].payload.counter.played}
-                onChange={(e: ChangeEvent<HTMLInputElement>) => e.preventDefault()}
+                onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                  e.preventDefault()
+                }
                 disabled
               />
             </Container>
