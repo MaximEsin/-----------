@@ -27,12 +27,6 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/cz-commitlint": "^19.2.0",
-    "@releaseband/commitlint-config": "^1.0.4",
-    "@releaseband/eslint-config-typescript-react": "^2.0.1",
-    "@releaseband/lint-staged-config": "^1.0.4",
-    "@releaseband/markdownlint-config": "^2.0.4",
-    "@releaseband/prettier-config": "^1.0.7",
-    "@releaseband/typescript-config": "^1.0.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

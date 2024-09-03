@@ -4,12 +4,6 @@ specifiers:
   '@commitlint/cli': ^19.3.0
   '@commitlint/cz-commitlint': ^19.2.0
   '@reduxjs/toolkit': ^2.2.7
-  '@releaseband/commitlint-config': ^1.0.4
-  '@releaseband/eslint-config-typescript-react': ^2.0.1
-  '@releaseband/lint-staged-config': ^1.0.4
-  '@releaseband/markdownlint-config': ^2.0.4
-  '@releaseband/prettier-config': ^1.0.7
-  '@releaseband/typescript-config': ^1.0.1
   '@rjsf/core': ^5.19.4
   '@rjsf/utils': ^5.19.4
   '@rjsf/validator-ajv8': ^5.19.4
@@ -63,12 +57,6 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 19.4.0_typescript@5.4.5
   '@commitlint/cz-commitlint': 19.4.0_6qly3yf2aq7q5jpjfnutvxoepm
-  '@releaseband/commitlint-config': 1.0.4_@commitlint+cli@19.4.0
-  '@releaseband/eslint-config-typescript-react': 2.0.1_6gas7b6bplnd6quty7cit2e6mm
-  '@releaseband/lint-staged-config': 1.0.4_lint-staged@12.5.0
-  '@releaseband/markdownlint-config': 2.0.4_markdownlint-cli@0.31.1
-  '@releaseband/prettier-config': 1.0.7_prettier@2.8.8
-  '@releaseband/typescript-config': 1.0.1_typescript@5.4.5
   '@types/react': 18.3.3
   '@types/react-dom': 18.3.0
   '@typescript-eslint/eslint-plugin': 7.13.1_trtelzevxedq3vnlca74pjncju
@@ -348,13 +336,6 @@ packages:
     transitivePeerDependencies:
       - '@types/node'
       - typescript
-    dev: true
-
-  /@commitlint/config-conventional/16.2.4:
-    resolution: {integrity: sha512-av2UQJa3CuE5P0dzxj/o/B9XVALqYzEViHrMXtDrW9iuflrqCStWBAioijppj9URyz6ONpohJKAtSdgAOE0gkA==}
-    engines: {node: '>=v12'}
-    dependencies:
-      conventional-changelog-conventionalcommits: 4.6.3
     dev: true
 
   /@commitlint/config-validator/19.0.3:
@@ -866,91 +847,6 @@ packages:
       redux-thunk: 3.1.0_redux@5.0.1
       reselect: 5.1.1
     dev: false
-
-  /@releaseband/commitlint-config/1.0.4_@commitlint+cli@19.4.0:
-    resolution: {integrity: sha512-8U3L21ICgLFJJAutKjbCmAtk690YbS97VlRjwZjOjpK/9VjRUN25VKNKjAAalOVSPCuIEtX8a6xgICFch6MQQA==, tarball: download/@releaseband/commitlint-config/1.0.4/0a25721b6848adf0578e9a4e57c2d64f8c5e5538}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      '@commitlint/cli': ^16.2.4
-    dependencies:
-      '@commitlint/cli': 19.4.0_typescript@5.4.5
-      '@commitlint/config-conventional': 16.2.4
-      fast-glob: 3.3.2
-      js-yaml: 4.1.0
-    dev: true
-
-  /@releaseband/eslint-config-typescript-react/2.0.1_6gas7b6bplnd6quty7cit2e6mm:
-    resolution: {integrity: sha512-kUcFcv3GPMfQY8fOpiIkQGJhKr9YPaR7xiTpkg5lL0cxtElLgheI23vvTKeDN91t8WmCMpVCZt+rSxRYmgT6BA==, tarball: download/@releaseband/eslint-config-typescript-react/2.0.1/c6b21010b802295a6d09ab6802fea69a0b438987}
-    engines: {node: '>=18', pnpm: '>=7'}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^6.7.4
-      '@typescript-eslint/parser': ^6.7.4
-      eslint: ^8.51.0
-      eslint-config-prettier: ^9.0.0
-      eslint-plugin-import: ^2.28.1
-      eslint-plugin-jsx-a11y: ^6.7.1
-      eslint-plugin-prettier: ^4.2.1
-      eslint-plugin-react: ^7.33.2
-      eslint-plugin-react-hooks: ^4.6.0
-      eslint-plugin-simple-import-sort: ^10.0.0
-      eslint-plugin-sonarjs: ^0.21.0
-      eslint-plugin-tsdoc: ^0.2.17
-      prettier: ^2.8.8
-      typescript: ^5.2.2
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 7.13.1_trtelzevxedq3vnlca74pjncju
-      '@typescript-eslint/parser': 7.13.1_te743w6atip6hhlha3uq43n2xe
-      eslint: 8.57.0
-      eslint-config-airbnb: 19.0.4_rkj5pdb7oeft273slftvhkzequ
-      eslint-config-airbnb-typescript: 17.1.0_wuixz366rwfkhpg37eazxwal2u
-      eslint-config-prettier: 9.1.0_eslint@8.57.0
-      eslint-plugin-import: 2.29.1_gvmvrmeqzmsau7chv6w2cild2m
-      eslint-plugin-jsx-a11y: 6.9.0_eslint@8.57.0
-      eslint-plugin-prettier: 4.2.1_zeqqbltizyzbm6db3c6p5ijw5i
-      eslint-plugin-react: 7.35.0_eslint@8.57.0
-      eslint-plugin-react-hooks: 4.6.2_eslint@8.57.0
-      eslint-plugin-simple-import-sort: 10.0.0_eslint@8.57.0
-      eslint-plugin-sonarjs: 0.21.0_eslint@8.57.0
-      eslint-plugin-tsdoc: 0.2.17
-      prettier: 2.8.8
-      typescript: 5.4.5
-    dev: true
-
-  /@releaseband/lint-staged-config/1.0.4_lint-staged@12.5.0:
-    resolution: {integrity: sha512-RLTi+p5HmcvtaX/1wx8CY3OLNuFm2oPtbeKMowRvWPEioJGcihOVmJwyvnPohvXt1N3wybl239DpGHC54A/Lng==, tarball: download/@releaseband/lint-staged-config/1.0.4/9af657461ed24336d0560ffc04109d32da72b205}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      lint-staged: ^12.4.1
-    dependencies:
-      lint-staged: 12.5.0
-    dev: true
-
-  /@releaseband/markdownlint-config/2.0.4_markdownlint-cli@0.31.1:
-    resolution: {integrity: sha512-sry3aLoJ2Bq1b1iueU5ZA5cOGsdGKtxPTzeaGWe6GmzQfB41X3bgTH3AWYAXBelIwPCh/+jhvO249cs9pvD1yw==, tarball: download/@releaseband/markdownlint-config/2.0.4/1158a69febd7152a516c01da547873ba0386cf77}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      markdownlint-cli: ^0.31.1
-    dependencies:
-      markdownlint-cli: 0.31.1
-    dev: true
-
-  /@releaseband/prettier-config/1.0.7_prettier@2.8.8:
-    resolution: {integrity: sha512-0ebnoKRdrb+0ln/etVvAfF3ZgqW21W3YtO6Lq+iw4UKHXYODh0ISz1zZHLgXxpfVJHw0BNuICfyAJPABZHoctQ==, tarball: download/@releaseband/prettier-config/1.0.7/b0477fa8a9cc8046f05cdaa442f0ad2e28454114}
-    engines: {node: '>=18', pnpm: '>=7'}
-    peerDependencies:
-      prettier: ^2.8.8
-    dependencies:
-      prettier: 2.8.8
-    dev: true
-
-  /@releaseband/typescript-config/1.0.1_typescript@5.4.5:
-    resolution: {integrity: sha512-kcWzjtXXSoQ1vki+5nmMFuxklK2z84xmtXglFTSz4ZGy/g9GFoBSdO6nDbim6yCLiRZgTvbVbeUQGBYDPgQTTQ==, tarball: download/@releaseband/typescript-config/1.0.1/c4181238c9738219941292fb80817b50593b53f4}
-    engines: {node: '>=18', pnpm: '>=7'}
-    peerDependencies:
-      typescript: ^5.2.2
-    dependencies:
-      typescript: 5.4.5
-    dev: true
 
   /@rjsf/core/5.20.0_5cdeaerst64636sqxlgnjsax2i:
     resolution: {integrity: sha512-WLxtdNx+KlOXmVpCcyAgXqiQEL9k8ejC8rFYMAhdY7kzuh1e/0y13wHjoTkFXFg/Cxd2faENxf+oQoe1TC3n5g==}
@@ -1751,24 +1647,11 @@ packages:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
-  /confusing-browser-globals/1.0.11:
-    resolution: {integrity: sha512-JsPKdmh8ZkmnHxDk55FZ1TqVLvEQTvoByJZRN9jzI0UjxK/QgAmsphz7PGtqgPieQZ/CQcHWXCR7ATDNhGe+YA==}
-    dev: true
-
   /conventional-changelog-angular/7.0.0:
     resolution: {integrity: sha512-ROjNchA9LgfNMTTFSIWPzebCwOGFdgkEq45EnvvrmSLvCtAw0HSmrCs7/ty+wAeYUZyNay0YMUNYFTRL72PkBQ==}
     engines: {node: '>=16'}
     dependencies:
       compare-func: 2.0.0
-    dev: true
-
-  /conventional-changelog-conventionalcommits/4.6.3:
-    resolution: {integrity: sha512-LTTQV4fwOM4oLPad317V/QNQ1FY4Hju5qeBIM1uTHbrnCE+Eg4CdRZ3gO2pUeR+tzWdp80M2j3qFFEDWVqOV4g==}
-    engines: {node: '>=10'}
-    dependencies:
-      compare-func: 2.0.0
-      lodash: 4.17.21
-      q: 1.5.1
     dev: true
 
   /conventional-commit-types/3.0.0:
@@ -2295,56 +2178,6 @@ packages:
   /escape-string-regexp/4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
-    dev: true
-
-  /eslint-config-airbnb-base/15.0.0_jrbq5spb6ym3vlo5mnlvtmgpyy:
-    resolution: {integrity: sha512-xaX3z4ZZIcFLvh2oUNvcX5oEofXda7giYmuplVxoOg5A7EXJMrUyqRgR+mhDhPK8LZ4PttFOBvCYDbX3sUoUig==}
-    engines: {node: ^10.12.0 || >=12.0.0}
-    peerDependencies:
-      eslint: ^7.32.0 || ^8.2.0
-      eslint-plugin-import: ^2.25.2
-    dependencies:
-      confusing-browser-globals: 1.0.11
-      eslint: 8.57.0
-      eslint-plugin-import: 2.29.1_gvmvrmeqzmsau7chv6w2cild2m
-      object.assign: 4.1.5
-      object.entries: 1.1.8
-      semver: 6.3.1
-    dev: true
-
-  /eslint-config-airbnb-typescript/17.1.0_wuixz366rwfkhpg37eazxwal2u:
-    resolution: {integrity: sha512-GPxI5URre6dDpJ0CtcthSZVBAfI+Uw7un5OYNVxP2EYi3H81Jw701yFP7AU+/vCE7xBtFmjge7kfhhk4+RAiig==}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^5.13.0 || ^6.0.0
-      '@typescript-eslint/parser': ^5.0.0 || ^6.0.0
-      eslint: ^7.32.0 || ^8.2.0
-      eslint-plugin-import: ^2.25.3
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 7.13.1_trtelzevxedq3vnlca74pjncju
-      '@typescript-eslint/parser': 7.13.1_te743w6atip6hhlha3uq43n2xe
-      eslint: 8.57.0
-      eslint-config-airbnb-base: 15.0.0_jrbq5spb6ym3vlo5mnlvtmgpyy
-      eslint-plugin-import: 2.29.1_gvmvrmeqzmsau7chv6w2cild2m
-    dev: true
-
-  /eslint-config-airbnb/19.0.4_rkj5pdb7oeft273slftvhkzequ:
-    resolution: {integrity: sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==}
-    engines: {node: ^10.12.0 || ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      eslint: ^7.32.0 || ^8.2.0
-      eslint-plugin-import: ^2.25.3
-      eslint-plugin-jsx-a11y: ^6.5.1
-      eslint-plugin-react: ^7.28.0
-      eslint-plugin-react-hooks: ^4.3.0
-    dependencies:
-      eslint: 8.57.0
-      eslint-config-airbnb-base: 15.0.0_jrbq5spb6ym3vlo5mnlvtmgpyy
-      eslint-plugin-import: 2.29.1_gvmvrmeqzmsau7chv6w2cild2m
-      eslint-plugin-jsx-a11y: 6.9.0_eslint@8.57.0
-      eslint-plugin-react: 7.35.0_eslint@8.57.0
-      eslint-plugin-react-hooks: 4.6.2_eslint@8.57.0
-      object.assign: 4.1.5
-      object.entries: 1.1.8
     dev: true
 
   /eslint-config-prettier/9.1.0_eslint@8.57.0:
@@ -4106,15 +3939,6 @@ packages:
   /punycode/2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
-    dev: true
-
-  /q/1.5.1:
-    resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
-    engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
-    deprecated: |-
-      You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
-
-      (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
     dev: true
 
   /queue-microtask/1.2.3:
