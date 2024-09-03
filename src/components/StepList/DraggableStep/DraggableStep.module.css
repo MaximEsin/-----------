@@ -1,0 +1,71 @@
+.step {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(65, 83, 154);
+  border-radius: 0.313rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.step:hover {
+  background-color: rgb(83, 104, 187);
+}
+
+.stepText {
+  color: white;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.stepHighlighted {
+  background-color: rgb(73, 103, 221);
+}
+
+.stepBtn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  width: 90%;
+  text-align: left;
+}
+
+.stepBtnSmall {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 10%;
+}
+
+.img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.fsStepBtn {
+  background-color: purple;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  width: 90%;
+  text-align: left;
+  border-radius: 0.313rem;
+  transition: all 0.3s ease;
+}
+
+.fsStepBtn:hover {
+  background-color: rgb(168, 12, 168);
+}

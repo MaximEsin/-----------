@@ -1,0 +1,102 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: rgb(83, 104, 187);
+}
+
+.btnActive {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgb(189, 46, 17);
+}
+
+.btnActive:hover {
+  transform: scale(1.1);
+  background-color: rgb(235, 55, 19);
+}
+
+.img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+}
+
+.activeImg {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  background-color: rgb(16, 183, 38);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(65, 83, 154);
+  border-radius: 2rem;
+  width: 90%;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: rgb(83, 104, 187);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(65, 83, 154);
+}
+
+.activeButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: rgb(189, 46, 17);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeButton:hover {
+  background-color: rgb(235, 55, 19);
+}
+
+.input {
+  padding: 0.5rem;
+  border: none;
+  background-color: rgb(83, 104, 187);
+  color: white;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(37, 90, 142);
+  width: 18%;
+  height: 95%;
+  border-radius: 1rem;
+  gap: 1rem;
+  padding: 1rem;
+  overflow: auto;
+}

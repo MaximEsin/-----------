@@ -1,0 +1,24 @@
+.node {
+  width: 6rem;
+  height: 3rem;
+  border: 1px solid black;
+  display: flex;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nodeText {
+  font-size: 1rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
